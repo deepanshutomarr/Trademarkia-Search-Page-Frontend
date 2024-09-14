@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible {
+    outline: none;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+@layer base {
+    :root {
+        /*------Color variables------*/
+        --black_900: #000000;
+        --black_900_19: #00000019;
+        --blue_50: #eef4ff;
+        --blue_a200: #4380ec;
+        --blue_gray_100: #d9d9d9;
+        --blue_gray_100_01: #d1d1d1;
+        --blue_gray_100_02: #d4d4d4;
+        --blue_gray_50: #f1f1f1;
+        --blue_gray_700: #4b5563;
+        --blue_gray_900: #313131;
+        --gray_100: #fef7f0;
+        --gray_200: #eaeaea;
+        --gray_300: #e6e5e5;
+        --gray_400: #c7c7c7;
+        --gray_400_3f: #c5c5c53f;
+        --gray_50: #f8fafe;
+        --gray_500_3f: #9797973f;
+        --gray_700: #575757;
+        --gray_700_01: #626262;
+        --gray_800: #3e3e3e;
+        --gray_800_01: #3a3a3a;
+        --gray_900: #1alala;
+        --gray_900_01: #1d1c1d;
+        --green_500: #41b65c;
+        --green_900: #128807;
+        --red_400: #eb4949;
+        --white_a700: #fefefe;
+        --white_a700_01: #ffffff;
+        --white_a700_02: #fcfcfe;
+        --yellow_900: #e7760e;
+
+        /*------Shadow variables ------*/
+        --shadow-xs: 0 4.34px 108px 0 #9797973f;
+        --shadow-sm: 0 4.34px 68px 0 #c5c5c53f;
+        --shadow-md: 0 2.98px 14px 0 #c5c5c53f;
+
+        /* ------Border radius variables---- */
+        --radius-xs: 4px;
+        --radius-sm: 6px;
+        --radius-md: 8px;
+        --radius-lg: 10px;
+        --radius-xl: 12px;
+        --radius-2x1: 16px;
+
+        /*------Spacing variables------*/
+        --space-xs: 2px;
+        --space-sm: 4px;
+        --space-md: 6px;
+        --space-lg: 8px;
+        --space-xl: 12px;
+        --space-2x1: 16px;
+        --space-3x1: 18px;
+        --space-4x1: 24px;
+        --space-5x1: 28px;
+        --space-6x1: 45px;
+        --space-7x1: 48px;
+    }
+}
+
+@layer components {
+
+    /*----------------------------------
+    Container CSS
+------------------------------------*/
+    .container-xs {
+
+        @apply w-full mx-auto max-w-[900px];
+    }
+}

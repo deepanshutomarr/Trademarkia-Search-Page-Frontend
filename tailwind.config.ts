@@ -1,19 +1,13 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+module.exports = {
+  mode: "jit",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/**/*.{js,ts,jsx, tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
   ],
+  darkMode: "class",
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
-export default config;
