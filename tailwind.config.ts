@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   content: [
-    "./src/**/**/*.{js,ts,jsx, tsx,html,mdx}",
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
   ],
   darkMode: "class",
@@ -11,3 +11,5 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/forms")],
 };
+
+export {};
