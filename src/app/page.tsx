@@ -21,7 +21,7 @@ const Home = () => {
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
           <Link href="/v1" style={{ color: "#87CEFA", textDecoration: "none" }}>
-            V1
+            Search Page
           </Link>
         </li>
       </ul>
