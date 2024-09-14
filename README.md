@@ -1,7 +1,6 @@
 ## Description
 - This React application is built using [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
-- It uses [Tailwind CSS](https://tailwindcss.com/)
-- The application is generated in [TypeScript](https://www.typescriptlang.org/).
+- It uses [Tailwind CSS](https://tailwindcss.com/) and  [TypeScript](https://www.typescriptlang.org/).
 
 ## Pre-requisites
 
