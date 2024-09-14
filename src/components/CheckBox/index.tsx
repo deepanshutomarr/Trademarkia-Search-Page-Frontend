@@ -22,7 +22,7 @@ type CheckboxProps = Omit<
     name: string;
     label: string;
     id: string;
-    onChange: Function;
+    onChange: (checked: boolean) => void;  // Fix for `Function` type issue
     variant: keyof typeof variants;
     size: keyof typeof sizes;
     onClick: () => void;
@@ -66,5 +66,8 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     );
   }
 );
+
+// Fix for missing display name
+CheckBox.displayName = "CheckBox";
 
 export { CheckBox };

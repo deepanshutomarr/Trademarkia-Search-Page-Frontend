@@ -1,5 +1,6 @@
-import { Button, Img, Heading } from "../../components";
+import { Button, Heading } from "../../components";
 import React from "react";
+import Image from "next/image";  // Import Next.js Image component
 
 export default function AboutTrademarksSection() {
   return (
@@ -7,13 +8,13 @@ export default function AboutTrademarksSection() {
       {/* about trademarks section */}
 
       <div className="flex self-stretch px-7 sm:px-5">
-        <div className="mx-auto flex w-full max-w-|w-[1382px] flex-col gap-[18px]">
+        <div className="mx-auto flex w-full max-w-[1382px] flex-col gap-[18px]">
           <div className="ml-2.5 flex flex-col items-start gap-[18px] md:ml-0">
             <Heading
               as="h1"
               className="ml-1.5 text-[16px] font-bold text-[#4b5563] md:m1-0"
             >
-              About 159 Trademarks found for "nike”
+              About 159 Trademarks found for &quot;nike&quot;
             </Heading>
             <div className="h-[2px] self-stretch bg-[#e6e5e5]" />
           </div>
@@ -38,23 +39,33 @@ export default function AboutTrademarksSection() {
             <div className="flex w-full items-center justify-end self-center pl-14 pr-[84px] md:px-5">
               <Button
                 leftIcon={
-                  <img
-                    src="img_filteralt.svg"
+                  <Image
+                    src="/img_filteralt.svg"  // Corrected path to include `/`
                     width={20}
                     height={20}
-                    alt="Filter Alt"
+                    alt="Filter Alt"  // Added alt text for accessibility
                     className="h-[20px] w-[20px]"
                   />
                 }
-                className="flex h-[42px] min-w-[94px] flex-row items-center justify-center gap-1 rounded-1g border border-solid border-[#c7c7c7] bg-[#ffffff] px-[21px] text-center text-[12px] font-medium text-[12px] font-medium text -[#575757] sm:px-5"
+                className="flex h-[42px] min-w-[94px] flex-row items-center justify-center gap-1 rounded-[10px] border border-solid border-[#c7c7c7] bg-[#ffffff] px-[21px] text-center text-[12px] font-medium text-[#575757] sm:px-5"
               >
                 Filter
               </Button>
               <Button className="ml-[22px] flex h-[32px] w-[32px] items-center justify-center rounded-[16px] border border-solid border-[#c7c7c7] bg-[#ffffff] px-1">
-                <img src="img_search_gray_700.svg" width={20} height={20} />
+                <Image
+                  src="/img_search_gray_700.svg"  // Corrected path
+                  width={20}
+                  height={20}
+                  alt="Search"  // Added alt text for accessibility
+                />
               </Button>
               <Button className="ml-5 flex h-[32px] w-[32px] items-center justify-center rounded-[16px] border border-solid border-[#c7c7c7] bg-[#ffffff] px-1">
-                <img src="img_sort.svg" width={20} height={20} />
+                <Image
+                  src="/img_sort.svg"  // Corrected path
+                  width={20}
+                  height={20}
+                  alt="Sort"  // Added alt text for accessibility
+                />
               </Button>
             </div>
           </div>

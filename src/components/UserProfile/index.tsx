@@ -48,7 +48,7 @@ export default function UserProfile({
           />
         </div>
         <div className="flex w-[44%] flex-col gap-7 sm:gap-7">
-          <div className="flex flex-col items-start gap-1 sm: gap-1">
+          <div className="flex flex-col items-start gap-1 sm:gap-1">
             <Heading
               as="h6"
               className="text-[16px] font-bold text-[#1a1a1a] sm:text-[13px]"
@@ -63,7 +63,7 @@ export default function UserProfile({
               {companyName}
             </Heading>
           </div>
-          <div className="flex flex-col items-start gap-0.5 sm: gap-0.5">
+          <div className="flex flex-col items-start gap-0.5 sm:gap-0.5">
             <Heading
               size="headings"
               as="p"
@@ -79,10 +79,10 @@ export default function UserProfile({
               {registrationDate}
             </Heading>
           </div>
-        </div>{" "}
+        </div>
       </div>
       <div className="flex flex-1 items-start justify-center gap-[45px]">
-        <div className="flex w-[28%] flex-col gap-12 self-center sm: gap-12">
+        <div className="flex w-[28%] flex-col gap-12 self-center sm:gap-12">
           <div className="flex flex-col items-start justify-center">
             <div className="flex items-center justify-center gap-1.5 self-stretch">
               <div className="h-[8px] w-[8px] rounded bg-[#128807]" />
@@ -90,7 +90,7 @@ export default function UserProfile({
                 as="h6"
                 className="text-[16px] font-bold text-[#41b65c] sm:text-[13px]"
               >
-                (status)
+                {status}
               </Heading>
             </div>
             <Heading
@@ -99,9 +99,8 @@ export default function UserProfile({
               className="font-['Gilroy'] text-[12px] font-medium text-[#1alala]"
             >
               <span className="font-normal">on</span>
-
               <span>&nbsp;</span>
-              <span className="font-bold">26 Jun 2020</span>
+              <span className="font-bold">{statusDate}</span>
             </Heading>
           </div>
 

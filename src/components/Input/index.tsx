@@ -22,13 +22,12 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       prefix,
       suffix,
       onChange,
-
       ...restProps
     },
     ref
   ) => {
     return (
-      <label className={`${className} undefined `}>
+      <label className={`${className} undefined`}>
         {!!label && label}
         {!!prefix && prefix}
         <input
@@ -38,10 +37,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           placeholder={placeholder}
           onChange={onChange}
           {...restProps}
-        />{" "}
+        />
         {!!suffix && suffix}
       </label>
     );
   }
 );
+
+// Add the display name for better debugging
+Input.displayName = "Input";
+
 export { Input };

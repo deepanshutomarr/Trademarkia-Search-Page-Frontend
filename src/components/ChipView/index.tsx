@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
+
 export type ChipViewOption<Value = string | number> = {
   label: string;
   value: Value;
 };
+
 export type ChipViewProps<Value = string | number> = Omit<
   React.ComponentPropsWithoutRef<"div">,
   "children"
@@ -84,7 +86,7 @@ export function ChipView<Value = string | number>(props: ChipViewProps<Value>) {
         .filter((option) => values.includes(option.value))
         .map((option) => option.value);
     });
-  }, [options]);
+  }, [options, setValues]);  // Added setValues to the dependency array
 
   return (
     <div {...restProps}>

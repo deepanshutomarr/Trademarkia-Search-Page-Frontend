@@ -1,4 +1,5 @@
 import React from "react";
+
 const sizes = {
   textxs: "text-[12px] font-medium",
   texts: "text-[14px] font-medium",
@@ -9,7 +10,7 @@ const sizes = {
 
 export type HeadingProps = Partial<{
   className: string;
-  as: any;
+  as: React.ElementType;  // Replace 'any' with 'React.ElementType'
   size: keyof typeof sizes;
 }> &
   React.DetailedHTMLProps<
@@ -24,7 +25,7 @@ const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
   as,
   ...restProps
 }) => {
-  const Component = as || "h6";
+  const Component = as || "h6"; // Use 'as' prop or default to 'h6'
   return (
     <Component
       className={`text-[#1a1a1a] font-['Gilroy'] ${className} ${sizes[size]}`}
@@ -34,4 +35,5 @@ const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
     </Component>
   );
 };
+
 export { Heading };
