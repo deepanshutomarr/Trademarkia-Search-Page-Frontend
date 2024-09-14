@@ -12,7 +12,12 @@ const Home = () => {
       }}
     >
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
-      Quickly use below links to navigate through all pages.
+      <p style={{ fontSize: "18px", marginBottom: "30px" }}>
+        This project is made by Deepanshu Tomar
+
+        Quickly use the below link to navigate through the search page.
+      </p>
+      
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
           <Link href="/v1" style={{ color: "#87CEFA", textDecoration: "none" }}>
