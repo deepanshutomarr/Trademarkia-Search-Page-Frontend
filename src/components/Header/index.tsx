@@ -1,6 +1,6 @@
 "use client";
 
-import { CloseSVG } from "/Input/close.tsx";
+import { CloseSVG } from "../Input/close";
 import { Heading, Button, Input, Img } from "./..";
 import Link from "next/link";
 import React from "react";

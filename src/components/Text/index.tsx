@@ -9,26 +9,25 @@ const sizes: {
   large: "16px",
 };
 
-// Define a type for allowed elements for the `as` prop
-type AllowedElements = keyof JSX.IntrinsicElements;
-
+// Define a type for the props
 export type TextProps = Partial<{
   className: string;
-  as: AllowedElements; // Specify allowed elements
+  as: React.ElementType; // Use React.ElementType for flexibility
   size: keyof typeof sizes;
-}> & React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>;
+}> &
+  React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLSpanElement>,
+    HTMLSpanElement
+  >;
 
 // Functional component with type-safe props
 const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   children,
   className = "",
-  as = "p", // Default element type
+  as: Component = "p", // Default to <p> if `as` is not provided
   size = "medium", // Default size
   ...restProps
 }) => {
-  // Determine the component to render
-  const Component = as;
-
   return (
     <Component className={`${className} ${sizes[size]}`} {...restProps}>
       {children}
