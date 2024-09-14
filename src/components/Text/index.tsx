@@ -1,5 +1,12 @@
 import React from "react";
-const sizes = {};
+
+const sizes: {
+  [key: string]: string;
+} = {
+  small: "8px",
+  medium: "12px",
+  large: "16px",
+};
 
 export type TextProps = Partial<{
   className: string;
