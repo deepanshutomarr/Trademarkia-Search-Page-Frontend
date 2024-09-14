@@ -22,20 +22,27 @@ public --------- Static assets holder
     fonts -------- Font resources
 
 README.md
+
 src -------- Source code root
     app ------- Application logic
         <router> ------ Route-specific components
             page.tsx
         layout.tsx
         page.tsx
+
     components --------- Reusable components
+    
     styles ----------- Global style config
         font.css --------- Font styling
         index.css --------- Main stylesheet
         tailwind.css ------- Default Tailwind modules
+
 next.config.js ------- Next.js config
+
 package.json
+
 postcss.config.js
+
 tailwind.config.js ------- Entire theme config, colors, fonts etc.
 
 ```
