@@ -13,9 +13,7 @@ const Home = () => {
     >
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
       <p style={{ fontSize: "18px", marginBottom: "30px" }}>
-        This project is made by Deepanshu Tomar
-
-        Quickly use the below link to navigate through the search page.
+        This project is made by Deepanshu Tomar. Quickly use the below link to navigate through the search page.
       </p>
       
       <ul style={{ listStyle: "none", padding: "0" }}>
